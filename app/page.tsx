@@ -122,7 +122,7 @@ export default function Home() {
             <div className="space-y-6">
               <div className="space-y-4">
                 <h2 className="text-4xl md:text-6xl font-bold gradient-text leading-tight">
-                  Discover Your Store's
+                  Discover Your Shopify Store's
                   <br />
                   <span className="text-accent-600">Personality</span> in Seconds
                 </h2>
