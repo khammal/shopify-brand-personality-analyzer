@@ -1,6 +1,6 @@
 # Brand Personality Analyzer
 
-A modern, AI-powered web tool that analyzes Shopify stores and generates insightful brand personality assessments based on their homepage appearance and content.
+A modern, AI-powered web tool that analyzes Shopify stores and generates insightful brand personality assessments based on their store's appearance and content.
 
 ## 🛠️ Tech Stack
 
