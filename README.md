@@ -2,19 +2,9 @@
 
 A modern, AI-powered web tool that analyzes Shopify stores and generates insightful brand personality assessments based on their homepage appearance and content.
 
-## 🚀 Features
-
-- **AI-Powered Analysis**: Uses OpenAI GPT-4 to generate unique personality assessments
-- **Web Scraping**: Extracts content from Shopify stores using Cheerio
-- **Beautiful UI**: Modern, responsive design with Tailwind CSS
-- **Real-time Progress**: Animated loading states with step-by-step progress
-- **Error Handling**: Comprehensive error handling with user-friendly messages
-- **Rate Limiting**: Built-in rate limiting to prevent API abuse
-- **Mobile Responsive**: Optimized for all device sizes
-
 ## 🛠️ Tech Stack
 
-- **Framework**: Next.js 14+ with TypeScript
+- **Framework**: Next.js (React) 14+ with TypeScript
 - **Styling**: Tailwind CSS
 - **AI Integration**: OpenAI GPT-4 API
 - **Web Scraping**: Cheerio for HTML parsing
@@ -30,7 +20,6 @@ A modern, AI-powered web tool that analyzes Shopify stores and generates insight
 1. **Clone the repository**
    ```bash
    git clone <repository-url>
-   cd brand-personality-analyzer
    ```
 
 2. **Install dependencies**
@@ -81,10 +70,8 @@ A modern, AI-powered web tool that analyzes Shopify stores and generates insight
 ## 🎯 How It Works
 
 1. **URL Input**: User enters a Shopify store URL
-2. **Validation**: URL is validated and normalized
-3. **Web Scraping**: Content is extracted from the store's homepage
-4. **AI Analysis**: OpenAI GPT-4 generates personality assessment
-5. **Results Display**: Beautiful card format shows the analysis
+4. **AI Analysis**: Generates personality assessment
+5. **Results Display**: Results of the analysis are shown
 
 ## 🎨 Features in Detail
 
@@ -95,11 +82,3 @@ A modern, AI-powered web tool that analyzes Shopify stores and generates insight
 - **Music Playlist**: 5-6 song suggestions matching the brand vibe
 - **Brand Essence**: One-line summary of the brand's character
 - **Scores**: Three ratings (1-10) for Trust/Reliability, Creativity/Innovation, and Professionalism
-
-### UI/UX Features:
-- **Responsive Design**: Works perfectly on desktop, tablet, and mobile
-- **Loading States**: Animated progress indicators with step descriptions
-- **Error Handling**: User-friendly error messages with retry options
-- **Smooth Animations**: Fade-in effects and hover animations
-- **Modern Design**: Clean, professional interface with gradients and shadows
-
