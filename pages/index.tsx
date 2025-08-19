@@ -1,12 +1,10 @@
-'use client';
-
 import { useState } from 'react';
 import { PersonalityAnalysis, LoadingState, ErrorState } from '@/types';
 import URLInput from '@/components/URLInput';
 import LoadingStateComponent from '@/components/LoadingState';
 import ErrorMessage from '@/components/ErrorMessage';
 import PersonalityCard from '@/components/PersonalityCard';
-import { Sparkles, Heart, Zap } from 'lucide-react';
+import { Sparkles, Heart, Zap, Store } from 'lucide-react';
 
 export default function Home() {
   const [loading, setLoading] = useState(false);
@@ -99,18 +97,18 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-primary-50">
       {/* Header */}
-      <header className="bg-white shadow-sm border-b border-gray-200">
+      <header className="bg-white shadow-sm border-b border-gray-200 py-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center py-6">
-            <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-gradient-to-r from-primary-500 to-accent-500 rounded-xl flex items-center justify-center">
-                <Sparkles className="h-6 w-6 text-white" />
-              </div>
-              <h1 className="text-2xl font-bold gradient-text">
-                Brand Personality Analyzer
-              </h1>
-            </div>
+        <div className="flex justify-center items-center">
+        <div className="flex items-center space-x-3">
+          <div className="w-10 h-10 bg-gradient-to-r from-primary-500 to-accent-500 rounded-xl flex items-center justify-center">
+          <Store className="h-6 w-6 text-white" />
           </div>
+          <h1 className="text-2xl font-bold gradient-text">
+          Brand Personality Analyzer
+          </h1>
+        </div>
+        </div>
         </div>
       </header>
 
@@ -119,12 +117,12 @@ export default function Home() {
         {!analysis && !loading && !error.hasError && (
           <div className="text-center space-y-8">
             {/* Hero Section */}
-            <div className="space-y-6">
+            <div className="space-y-6 fade-in-up">
               <div className="space-y-4">
                 <h2 className="text-4xl md:text-6xl font-bold gradient-text leading-tight">
                   Discover Your Shopify Store's
                   <br />
-                  <span className="text-accent-600">Personality</span> in Seconds
+                  <span className="text-accent-900">Personality</span> in Seconds
                 </h2>
                 <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
                   Get instant, AI-powered insights into any website's unique character. 
@@ -134,23 +132,23 @@ export default function Home() {
 
               {/* Features */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto mt-12">
-                <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
+                <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-100 staggered-fade-in delay-100">
                   <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
                     <Zap className="h-6 w-6 text-primary-600" />
                   </div>
                   <h3 className="text-lg font-semibold text-gray-800 mb-2">Lightning Fast</h3>
                   <p className="text-gray-600">Get your analysis in under 15 seconds</p>
                 </div>
-                <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
+                <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-100 staggered-fade-in delay-200">
                   <div className="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center mb-4">
                     <Sparkles className="h-6 w-6 text-accent-600" />
                   </div>
                   <h3 className="text-lg font-semibold text-gray-800 mb-2">AI Powered</h3>
                   <p className="text-gray-600">Advanced AI analyzes your brand's unique traits</p>
                 </div>
-                <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
-                  <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
-                    <Heart className="h-6 w-6 text-purple-600" />
+                <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-100 staggered-fade-in delay-300">
+                  <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
+                    <Heart className="h-6 w-6 text-primary-600" />
                   </div>
                   <h3 className="text-lg font-semibold text-gray-800 mb-2">Insightful</h3>
                   <p className="text-gray-600">Discover your target audience and brand essence</p>
@@ -159,7 +157,7 @@ export default function Home() {
             </div>
 
             {/* URL Input */}
-            <div className="mt-16">
+            <div className="mt-16 staggered-fade-in delay-400">
               <URLInput onAnalyze={handleAnalyze} loading={loading} />
             </div>
           </div>

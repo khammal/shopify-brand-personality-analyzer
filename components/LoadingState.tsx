@@ -117,7 +117,7 @@ export default function LoadingStateComponent({ loadingState }: LoadingStateProp
       {/* Progress bar */}
       <div className="w-full bg-gray-200 rounded-full h-2">
         <div 
-          className="bg-gradient-to-r from-primary-500 to-accent-500 h-2 rounded-full transition-all duration-500 ease-out"
+          className="bg-primary-500 h-2 rounded-full transition-all duration-500 ease-out"
           style={{ width: `${loadingState.progress}%` }}
         />
       </div>

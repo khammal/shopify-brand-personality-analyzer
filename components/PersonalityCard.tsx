@@ -22,9 +22,9 @@ export default function PersonalityCard({ analysis, onAnalyzeAnother }: Personal
   };
 
   return (
-    <div className="w-full max-w-4xl mx-auto space-y-6 animate-fade-in">
+    <div className="w-full max-w-4xl mx-auto space-y-6">
       {/* Main Personality Card */}
-      <div className="bg-gradient-to-br from-primary-50 via-white to-accent-50 border border-gray-200 rounded-2xl p-8 shadow-xl">
+      <div className="bg-gradient-to-br from-primary-50 via-white to-accent-50 border border-gray-200 rounded-2xl p-8 shadow-xl staggered-fade-in">
         {/* Header */}
         <div className="text-center mb-8">
           <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent mb-4">
@@ -106,10 +106,10 @@ export default function PersonalityCard({ analysis, onAnalyzeAnother }: Personal
       </div>
 
       {/* Target Customer Card */}
-      <div className="bg-gradient-to-br from-accent-50 to-white border border-accent-200 rounded-xl p-6">
+      <div className="bg-gradient-to-br from-blue-50 to-white border border-blue-300 rounded-xl p-6 staggered-fade-in delay-100">
         <div className="flex items-center space-x-3 mb-4">
-          <div className="w-10 h-10 bg-accent-100 rounded-full flex items-center justify-center">
-            <Users className="h-5 w-5 text-accent-600" />
+          <div className="w-10 h-10 bg-blue-200 rounded-full flex items-center justify-center">
+            <Users className="h-5 w-5 text-blue-700" />
           </div>
           <h2 className="text-xl font-semibold text-gray-800">Perfect For</h2>
         </div>
@@ -119,7 +119,7 @@ export default function PersonalityCard({ analysis, onAnalyzeAnother }: Personal
       </div>
 
       {/* Music Playlist Card */}
-      <div className="bg-gradient-to-br from-purple-50 to-white border border-purple-200 rounded-xl p-6">
+      <div className="bg-gradient-to-br from-purple-50 to-white border border-purple-200 rounded-xl p-6 staggered-fade-in delay-200">
         <div className="flex items-center space-x-3 mb-4">
           <div className="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center">
             <Music className="h-5 w-5 text-purple-600" />
@@ -139,7 +139,7 @@ export default function PersonalityCard({ analysis, onAnalyzeAnother }: Personal
       </div>
 
       {/* Analyze Another Button */}
-      <div className="text-center pt-6">
+      <div className="text-center pt-6 staggered-fade-in delay-300">
         <button
           onClick={onAnalyzeAnother}
           className="inline-flex items-center space-x-2 px-8 py-4 bg-gradient-to-r from-primary-500 to-primary-600 text-white font-semibold rounded-xl hover:from-primary-600 hover:to-primary-700 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl"
