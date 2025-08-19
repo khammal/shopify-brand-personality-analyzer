@@ -2,6 +2,9 @@
 
 A modern, AI-powered web tool that analyzes Shopify stores and generates insightful brand personality assessments based on their store's appearance and content.
 
+## 🌐 Check it out
+https://brand-personality-analyzer.vercel.app/
+
 ## 🛠️ Tech Stack
 
 - **Framework**: Next.js (React) 14+ with TypeScript
