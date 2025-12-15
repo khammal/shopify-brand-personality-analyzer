@@ -6,7 +6,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Brand Personality Analyzer</title>
+        <title>Brandify</title>
         <meta name="description" content="Discover your Shopify store's unique personality in seconds with AI-powered analysis" />
         <meta name="keywords" content="brand personality, shopify, e-commerce, AI analysis, brand analysis" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />

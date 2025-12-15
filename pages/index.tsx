@@ -105,7 +105,7 @@ export default function Home() {
           <Store className="h-6 w-6 text-white" />
           </div>
           <h1 className="text-2xl font-bold gradient-text">
-          Brand Personality Analyzer
+          Brandify
           </h1>
         </div>
         </div>
